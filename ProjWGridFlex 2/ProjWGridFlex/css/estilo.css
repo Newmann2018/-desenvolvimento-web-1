@@ -1,0 +1,240 @@
+@charset 'utf-8';
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: rgba(255, 166, 0,0.5);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 255,0.5);
+    border-radius: 20px;
+    
+  }
+
+body,ul,li,p,a,figure{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.centralizar-container{
+    margin: auto;
+}
+
+.width-800px{
+    max-width: 800px;
+}
+.width-780px{
+    max-width: 780px;
+}
+
+a{
+    color: white;
+
+}
+img{
+    width: 100%;
+    transition: 0.5s;
+    -moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+
+}
+img:hover{
+    transform: scale(1.5);
+    transform: rotate(360deg);
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 100px;
+    animation: girar 2s 3 ease-in-out;
+}
+
+#topo{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    animation: animacao 3s infinite;
+}
+
+#menu ul{
+    display: flex;
+}
+
+#menu ul li{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+/*Formatação do FlexBox Layout*/
+
+#flexivel{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexivel figure{
+    flex:200px;
+    margin: 10px;
+}
+
+.bg-vermelho{
+    background-color: red;
+}
+
+
+/*Fim da formatação do FlexBox Layout*/
+
+/*Formatação do Grid 1 Layout*/
+
+#grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    grid-gap: 20px;
+}
+#grid1 figure:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+#grid1 figure#anuncio{
+    grid-auto-columns: 1;
+    grid-row: 2/5;
+    display: block;
+}
+
+/*Formatação responsiva do Grid 1 Layout*/
+
+@media (max-width: 600px){
+    #grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #grid1 figure:nth-child(n + 4){
+        display: block;
+    }
+    #grid1 figure#anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+    
+}
+
+
+/*Fim da formatação do Grid 1 Layout*/
+
+
+/*Formatação do Grid 2 Layout*/
+#grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+#grid2 figure{
+    margin-bottom: 10px;
+}
+
+
+/*Formatação responsiva do Grid 2 Layout*/
+
+@media(max-width:600px){
+    #grid2{
+        grid-template-columns: 1fr;
+    }
+    #sidebar{
+        display: flex;
+        overflow: scroll;
+
+    }
+    #sidebar figure{
+        flex:1 0 200px;
+        margin: 0 10px;
+    }
+}
+
+/*Fim da formatação do Grid 2 Layout*/
+
+/*Formatação do Grid 3 Layout*/
+#grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+#grid2 figure{
+    margin-bottom: 10px;
+}
+
+
+/*Formatação responsiva do Grid 3 Layout*/
+
+#grid3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 10px;
+
+}
+#grid3 figure:nth-child(1){
+    grid-row: 1/3;
+}
+#grid3 figure{
+    display: grid;
+}
+#grid3 figure img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: flex-start;
+    height: 101%;
+}
+#grid3 figure figcaption{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-end;
+}
+
+/*Fim da formatação do Grid 3 Layout*/
+
+
+
+@keyframes animacao {
+    0%{
+        background-color: #aaa;
+    }
+    100%{
+        background-color: #333;
+    }
+    
+}
+
+@keyframes girar {
+    0%{
+        text-shadow: 1px 1px 5px #000;
+    }
+    100%{
+        text-shadow: 1px 1px 20px red;
+    }
+    
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css " type="text/css"/>
+        <title>Mundo Pet</title>
+    </head>
+    <body>
+        <header id="topo">
+            <figure id="logo">
+                <img src="img/logo-mundopet.png" alt="Logo da Mundo Pet" />
+            </figure>
+
+            <a id="btn-menu" href="#menu">
+                <button>
+                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                </button>
+            </a>
+
+            <nav id="menu">
+                <a id="btn-fechar" href="#">volta</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#redes">redes</a></li>
+                    <li><a href="#rodape">cadastre-se</a></li>
+                    <li><a href="https://www.mundopet.com/">Saiba Mais</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <figure id="banner">
+            <img src="img/banner.png" alt="Banner com foto da empresa">
+        </figure>
+
+        <main id="corpo">
+            <h1>Bem Vindo ao Mundo Pet </h1>
+
+            <figure>
+                <img src="img/sobre o mundo pet.png" alt="Animais felizes" >
+            </figure>
+
+            <section id="msg-introducao">
+                <p>
+                    É um prazer tê-los aqui! Somos a Mundo Pet, lugar onde você e o seu pet viverão momentos inesquecíveis!
+                    Fomos chamados para servir com excelência aos animais de estimação e encantar pessoas.
+                    Ser surpreendido positivamente sempre será a nossa melhor experiência.
+                    Por isso, nosso maior retorno é a quantidade de UAUs de nossos clientes e amigos.
+                    Sabemos que ter um bichinho de estimação é sinônimo de companheirismo, alegria e muito amor.
+                    Não importando qual o tipo de animal você tenha em casa, mas o laço que se cria ao depositarmos nele todo o nosso amor e cuidado.
+                    A Mundo Pet tem como base fazer com que pessoas se conheçam.
+                    O nosso local é um ambiente de encontros.
+                    Então, o nosso maior intuito é estreitar os laços da comunidade pet, seja clubes de raça ou fãs de uma determinada espécie.
+                    Este estreitamento pode acontecer dentro dos eventos de adoção em parceria com as ONGs protetoras de animais, que fazem um trabalho extremamente importante para nossa comunidade.
+                    Queremos também promover a posse responsável.
+                    Ser um tutor de Pet é um ato de humanidade e requer muita responsabilidade.
+                    Na Mundo Pet queremos assistir aos nossos clientes da melhor forma possível.
+                    Faça-nos uma visita. Estamos esperando você e seu pet!
+                </p>
+            </section>
+
+            <h2> Adote um Animal</h2>
+
+            <section>
+                <table>
+                    <tr>
+                       <th>Raça de Cachorro</th>
+                       <th>Especie Ave</th>
+                       <th>Especie Gato</th>
+                    </tr>
+                    <tr>
+                        <td>Airedale Terrier R$600,00 até 700,00</td>
+                        <td>Periquito Australiano R$ 20,00</td>
+                        <td>Bengal de R$ 2.500,00 até R$15.000</td>
+                   </tr>
+                    <tr>
+                        <td>Akita R$ 1.100 até 7.000</td>
+                        <td>Ring neck R$ 700,00</td>
+                        <td>Maine coon R$ 4.500 até 5.500</td>
+                    </tr>
+                    <tr>
+                        <td>Basset Hound R$ 1.500 até R$ 4.000</td>
+                        <td>Agapornis filhote manso R$ 110,00</td>
+                        <td>Persa R$ 2.000</td>
+                    </tr>
+               </table>
+            </section>
+        </main>
+        <footer id="rodape">
+            <div class="container-table">
+                <div class="content">
+                    <div id="formulario" class="formulario">
+                        <div>
+                            <form action="createUser.php" method="post">
+                                <div id="title">
+                                    <h1 id="title-form">Cadastro de novo Usuário</h1>
+                                    <a class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="container-form">
+                                    <div class="input_div">
+                                        <input class="input_form" type="text" name="name" placeholder="Digite seu Nome"
+                                        value="" required>
+                                    </div>
+                                    <div class="input_div">
+                                        <input class="input_form" type="text" name="email" placeholder="Digite seu Email"
+                                        value="" required>
+                                    </div>
+                                    <div class="input_div">
+                                        <input class="input_form" type="text" name="login" placeholder="Digite seu Login"
+                                        value="" required>
+                                    </div>
+                                    <div class="input_div">
+                                        <input class="input_form" type="password" name="password" placeholder="Digite sua Senha" required>
+                                    </div>
+                                     <div class="input_div">
+                                        <input class="input_form" type="text" name="telefone" placeholder="Digite seu Telefone"
+                                        value="" required>
+                                    </div>
+                                     <div class="input_div">
+                                        <input class="input_form" type="text" name="city" placeholder="Digite sua Cidade"
+                                        value="" required>
+                                    </div>
+                                     <div class="input_div">
+                                        <input class="input_form" type="text" name="state" placeholder="Digite seu Estado"
+                                        value="" required>
+                                    </div>
+                                     <div class="input_div">
+                                        Sexo:
+                                        <input type="radio" name="masc"
+                                        value="Masculino" required> Masculino
+                                        <input type="radio" name="fem"
+                                        value="Feminino" required> Feminino
+                                    </div>
+                                </div>
+                                <button class="send-buttons" name="action" value="create"> enviar </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2> cadastre-se</h2>
+            <div class="container-table">
+                <button id="form-button" class="add_table">
+                    Adicionar Usuário <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <div class="content">
+            <section id="redes">
+                <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google fa-lg " aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+            </section>
+            <p>
+                Copyright © WebMaster 2020. Todos os direitos reservados.
+            </p>
+            <section id="tecnico">
+                produzido pelos tecnicos para internet: NEWEMANN NABA COSTA / VALESKA REGINA DA SILVA
+                / ANTONIO FABIANO MARTINS SOARES JUNIOR
+            </section>
+        </footer>
+        <script src="js/funcao.js"></script>
+    </body>
+</html>

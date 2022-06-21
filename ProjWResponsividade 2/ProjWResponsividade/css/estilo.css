@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    box-sizing: border-box;
+   list-style: none; 
+}
+
+a{
+    color: white;
+}
+
+#topo,#banner,#corpo,#inscrevase,#rodape{
+    float: left;
+}
+
+body{
+    background-color: darkorange;
+}
+
+#topo{
+    background-color: white;
+    width: 100%;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    background-color: darksalmon;
+    background-image: url(../img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    float: left;
+}
+#btn_menu{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 140, 0);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    margin-top: 5px;margin-right: 10px;
+}
+
+#menu{
+    background-color: rgba(255, 140, 0,0.5);
+}
+

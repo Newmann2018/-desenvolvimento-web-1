@@ -1,0 +1,36 @@
+body{
+    background-color: #fff;
+}
+
+#titulo2{
+    font-size: 5em;
+    color: black;
+}
+
+h1,h2,button,div{
+    font-family: sans-serif;
+    color: gray !important;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+button {
+    background-color: crimson;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    font-size: 3vh;
+}
+
+div {
+    width: 80%;
+    height: 200px;
+    background-color: tomato;
+    margin-top: 10px;
+}
+#div1{
+    background-color: greenyellow;
+}

@@ -1,0 +1,405 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    box-sizing: border-box;
+    list-style: none; 
+}
+
+a{
+    color: white;
+}
+
+#topo,#banner,#corpo,#inscrevase,#rodape{
+    float: left;
+}
+
+body{
+    background-color: darkorange;
+}
+
+#topo{
+    background-color: white;
+    width: 100%;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    float: left;
+}
+#btn-menu{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 140, 0);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    margin-top: 5px;margin-right: 10px;
+}
+
+#menu{
+    background-color: rgba(255, 140, 0,0.9);
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    overflow: hidden;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+#btn-fechar{
+    float: right;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul li{
+    padding: 3%;
+}
+
+#menu ul li:hover{
+    background-color: rgba(255, 255,255,0.3);
+}
+
+#banner{
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0px 1px #000;
+}
+#banner h1,h2{
+    padding: 2%;
+    font-size: 1.5em;
+}
+#banner h1{
+    font-size: 1.8em;
+}
+#botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#banner button{
+    width: 45%;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    font-size: 1.3em;
+    color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3%;
+}
+
+#corpo{
+    width: 100%;
+    padding: 3% 4%;
+}
+
+.conteudo{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    font-size: 0.9em;
+    margin-bottom: 3%;
+    border-radius: 7px;
+}
+
+.conteudo img{
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.conteudo span h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+
+}
+.conteudo span p{
+    padding: 5%;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.2em;
+
+}
+
+#inscrevase{
+    width: 100%;
+    color: white;
+    text-shadow: 0.5px 0px 1px #000;
+    text-align: center;
+    font-size: 1.3em;
+}
+#inscrevase input{
+    width: 98%;
+    height: 35px;
+    margin: 1%;
+    border-radius: 7px;
+    color: chocolate;
+}
+
+#inscrevase input::placeholder{
+    color: chocolate;
+    padding-left: 10px;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+#inscrevase input:nth-child(2){
+    background-color:darkorange;
+    color: white;
+    box-shadow: 0px 0px 3px #fff ;
+    font-size: 1.2em;
+}
+
+#rodape{
+    width: 100%;
+    text-align: center;
+    text-shadow: 0.5px 0px 1px #000;
+    background-color: chocolate;
+    padding: 3% 4%;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+}
+#rodape #redes-sociais a{
+    color: rgba(255,255,255,0.7);
+    text-shadow: none;
+    font-size: 1.2em;
+    margin-right: 3%;
+}
+
+#rodape #redes-sociais a:hover{
+    color: rgba(255,255, 255, 1);
+    
+}
+i{
+   transition: 0.2s; 
+}
+#rodape #redes-sociais a i:hover{
+    transform: scale(1.8);
+}
+
+#rodape p{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+@media screen  and (min-width:400px){
+    #logo{
+        width: 70px;
+        height: 70px;
+        background-size: 110px;
+    }
+    #btn_menu{
+        width: 55px;
+        height: 55px;
+    }
+    #banner h1,h2{
+        padding: 2%;
+        font-size: 1.7em;
+    }
+    #banner h1{
+        font-size: 2em;
+    }
+    .conteudo{
+        font-size: 1.1em;
+    }
+    .conteudo span h3{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width:768px) {
+   
+
+    #btn-menu,#btn-fechar{
+        display: none;
+    }
+    a{
+        color: darkorange;
+    }
+    #menu{
+        background-color:white;
+        width: 65%;
+        height: 80px;
+        right: 0;
+        position: absolute;
+    }
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    #menu ul li{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        font-size: 1.2em;
+    }
+    #logo{
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/logo4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px;
+        float: left;
+        margin-left: 30px;
+    }
+    #banner h1{
+        font-size: 3em;
+    }
+    #banner button{
+        width: 45%;
+        height: 60px;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: darkorange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 3%;
+    }
+
+    .conteudo{
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        font-size: 0.9em;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        display: flex;
+    }
+    .conteudo img{
+        width: 50%;
+        border-radius: 7px 0px 0px 7px;
+    }
+
+    #inscrevase{
+        width: 100%;
+        height: 230px;
+        color: white;
+        text-shadow: 0.5px 0px 1px #000;
+        text-align: center;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+    }
+    #texto-inscrevase{
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #texto-inscrevase h2{
+        font-size: 2em;
+    }
+
+    #inscrevase form{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #inscrevase input{
+        width: 80%;
+        height: 60px;
+        margin: 1%;
+        border-radius: 7px;
+        color: chocolate;
+    }
+    #rodape #redes-sociais a{
+        margin-right: 6%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+      
+        #menu{
+            height: 100px;
+        }
+    
+        #logo{
+            height: 100px;
+           
+        }
+
+        #topo{
+            height: 100px;
+        }
+
+        #banner{
+            display: flex;
+        }
+        #botoes{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #banner button{
+            width: 90%;
+            height: 60px;
+        }
+        #corpo{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          
+        }
+        .conteudo{
+            margin-right: 10px;
+            font-size: 0.9em;
+            flex-direction: column;
+        }
+        .conteudo img{
+            width: 100%;
+            border-radius: 7px 7px 0px 0px;
+        }
+       
+        .conteudo span h3{
+            font-size: 1.3em;
+        }
+
+        
+}
