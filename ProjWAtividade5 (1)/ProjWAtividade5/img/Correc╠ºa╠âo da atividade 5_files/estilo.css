@@ -1,0 +1,160 @@
+@charset 'utf-8';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#principal{
+    width: 100%;
+    height: 230%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#topo{
+    width: 97%;
+    height: 13.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#login{
+    width: 100%;
+    height: 15%;
+}
+#login ul{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+#login ul li{
+    cursor: pointer;
+}
+#banner{
+    width: 100%;
+    height: 45%;
+    background-color: silver;
+}
+#menu{
+    width: 100%;
+    height: 15%;
+    background-color: #333;
+    transition: 0.7s;
+}
+#menu:hover{
+    background-color: darkgrey;
+}
+#menu ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#menu ul li{
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#menu ul li:hover{
+    color: #3A5FCD;
+}
+
+#corpo{
+    width: 97%;
+    height: 81%;
+    display: flex;
+}
+
+#conteudo-esquerdo{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudo-esquerdo section{
+    width: 99%;
+    height: 31.1%;
+    background-color:#00008B;
+}
+
+#conteudo-esquerdo section:nth-child(2){
+    background-color: #0000CD;
+}
+#conteudo-esquerdo section:nth-child(3){
+    background-color:#3A5FCD;
+}
+
+#conteudo-externo{
+    width: 30%;
+    height: 100%;
+}
+#conteudo-externo-superior{
+    width: 100%;
+    height: 73.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudo-externo-superior section{
+    width: 90%;
+    height: 28%;
+    background-color:#00008B;
+}
+#conteudo-externo-superior section:nth-child(2){
+    background-color: #0000CD;
+}
+#conteudo-externo-superior section:nth-child(3){
+    background-color: #3A5FCD;
+}
+
+#conteudo-externo-superior #externo-superior-quadrado-maior{
+    height: 35%;
+}
+
+#conteudo-externo-inferior{
+    width: 100%;
+    height: 26.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#externo-inferior-quadrados{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#externo-inferior-quadrados figure{
+    width: 40%;
+    height: 90%;
+    background-color: #3A5FCD;
+}
+
+#externo-inferior-retangulo{
+    width: 90%;
+    height: 32%;
+    background-color: #3A5FCD;
+}
+
+
+#rodape{
+    width: 97%;
+    height: 4%;
+    background-color: silver;
+}

@@ -1,0 +1,165 @@
+@charset 'utf-8';
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#principal{
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    background-image: url(../img/fundosite.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#tela1,#tela2,#tela3{
+    
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+}
+
+#tela1{
+    flex-direction: column;
+}
+
+#tela2{
+    background-color: cornflowerblue;
+}
+
+#tela3{
+    background-color: crimson;
+}
+
+#topo{
+    width: 100%;
+    height: 15%;
+    background-color:rgba(216, 19, 58,0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: fixed;
+}
+#menu{
+    width: 60%;
+    height: 25%;
+    background-color: chocolate;
+    border-radius: 20vh 0 0 0;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#menu ul{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+#menu ul li{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    color: bisque;
+    text-shadow: 1px 1px 5px #000;
+    transition: 0.5s;
+   
+}
+#menu ul li:hover{
+    text-shadow: none;
+}
+
+#conteudo-tela1{
+    margin-top: 8.4%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#banner{
+    width: 80%;
+    height: 45%;
+    background-color: crimson;
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#texto-tela1{
+    width: 60%;
+    height: 20%;
+    background-color: crimson;
+}
+
+#esquerdo-tela2,#direito-tela2{
+    margin-top: 8.5%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkviolet;
+
+
+
+}
+
+
+#tela2 figure{
+    width: 80%;
+    height: 50%;
+    background-color: darkorange;
+}
+#tela2 div{
+    width: 70%;
+    height: 15%;
+    background-color:  darkorange;
+}
+
+
+
+#esquerdo-tela3,#direito-tela3{
+    margin-top: 8.5%;
+    width: 50%;
+    height: 100%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mapa{
+    width: 90%;
+    height: 90%;
+    background-color: darkorange;
+}
+
+
+
+
+#direito-tela3{
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#direito-tela3 div{
+    width: 90%;
+    height: 15%;
+    background-color: darkorange;
+}
